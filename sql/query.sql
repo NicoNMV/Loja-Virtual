@@ -65,7 +65,6 @@ VALUES
 ('Flávio Almeida'),
 ('Roger Silva');
 
-
 CREATE VIEW vw_livro
 AS SELECT 
 	tbl_livro.cd_livro,
