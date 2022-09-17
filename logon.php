@@ -17,7 +17,7 @@
   <?php
   include 'tools/navbar.html';
   include 'tools/jumbotron.html';
-  include 'sql/conexao.php';
+  include 'conexao.php';
 
   ?>
 

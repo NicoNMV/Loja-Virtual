@@ -1,6 +1,6 @@
 <?php
 
-include 'sql/conexao.php';
+include 'conexao.php';
 
 session_start(); 
 

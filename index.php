@@ -17,7 +17,7 @@
   <?php
   include 'tools/navbar.html';
   include 'tools/jumbotron.html';
-  include 'sql/conexao.php';
+  include 'conexao.php';
 
   $consulta = $cn->query('select nm_livro, ds_capa, vl_preco, qt_estoque from vw_livro');
   ?>
