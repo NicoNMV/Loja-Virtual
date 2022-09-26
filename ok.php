@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Logon</title>
+  <title>Minha Loja - Logon de Usuário</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
@@ -11,48 +11,33 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+<style>
+  .espaco {
+    padding-top: 150px;
+  }
+</style>
 </head>
 
 <body>
   <?php
-  include 'tools/navbar.php';
-  include 'tools/jumbotron.html';
+
   include 'conexao.php';
+  include 'tools/navbar.php';
 
   ?>
 
-  <div class="container-fluid ">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-4"></div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 col-sm-offset-4 text-center">
 
-        <h2>Logon de Usuário</h2>
-        <form method="POST" name="frmusuario" action="validaUsuario.php" >
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input name="txtemail" type="email" class="form-control" required id="email">
-          </div>
+        <h2>Usuário Cadastrado com sucesso!!</h2>
 
-          <div class="form-group my-4">
+        <a href="logon.php" class="btn btn-block btn-info" role="button">Entrar no loja</a>
 
-            <label for="senha">Senha</label>
-            <input name="txtsenha" type="password" class="form-control" required id="senha">
-          </div>
-
-          <button type="submit" class="btn btn-default btn-outline-dark ">
-            Entrar
-          </button>
-
-          <button type="submit" class="btn btn-link">
-            Ainda não sou cadastrado
-          </button>
-
-        </form>
       </div>
     </div>
   </div>
-
-  <?php include 'tools/footer.html' ?>
 
 </body>
 </html>
